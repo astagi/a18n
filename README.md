@@ -19,8 +19,8 @@ For example:
 ```
 #include <a18n.h>
 char* data = "{\"limit\":{\"en\":\"Limit\",\"it\":\"Limite\"}}";
-a18n imanager = new a18n(data);
-imanager->getTranslation("en", "limit"); //will return "Limit"
+a18n imanager = new a18n("en", data);
+imanager->getTranslation("limit"); //will return "Limit"
 ```
 -------
 Relased under MIT license, Copyright (c) 2013 Andrea Stagi <stagi.andrea@gmail.com>
