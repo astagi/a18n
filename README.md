@@ -19,7 +19,7 @@ For example:
 ```
 #include <a18n.h>
 char* data = "{\"limit\":{\"en\":\"Limit\",\"it\":\"Limite\"}}";
-a18n imanager = new a18n("en", data);
+a18n* imanager = new a18n("en", data);
 imanager->getTranslation("limit"); //will return "Limit"
 ```
 -------
