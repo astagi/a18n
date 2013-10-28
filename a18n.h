@@ -8,15 +8,15 @@ class aJsonObject;
 class a18n {
 
     private:
-        char* locale = NULL;
-        char* data = NULL;
-        aJsonObject* root = NULL;
+        char* locale;
+        char* data;
+        aJsonObject* root;
     public:
         a18n();
         a18n(char* data);
         a18n(char* locale, char* data);
         ~a18n();
-        void setData(char* data);
+	    void setData(char* data);
         void setLocale(char* data);
         const char* getLocale();
         const char* getTranslation(char* item);

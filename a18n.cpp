@@ -1,7 +1,11 @@
 #include "a18n.h"
 #include "aJSON.h"
 
-a18n::a18n() {}
+a18n::a18n() {
+    locale = NULL;
+    data = NULL;
+    root = NULL;
+}
 
 a18n::a18n(char* data) {
     setData(data);
