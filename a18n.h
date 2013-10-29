@@ -7,10 +7,6 @@ class aJsonObject;
 
 class a18n {
 
-    private:
-        char* locale;
-        char* data;
-        aJsonObject* root;
     public:
         a18n();
         a18n(char* data);
@@ -21,6 +17,12 @@ class a18n {
         const char* getLocale();
         const char* getTranslation(char* item);
         const char* getTranslation(char* locale, char* item);
+
+    private:
+        char* locale;
+        char* data;
+        aJsonObject* root;
+        void init();
 };
 
 #endif
